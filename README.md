@@ -37,6 +37,9 @@ in-the-dark/
 │   ├── NOVEL_TRANSCRIPT_SAEKWANG_HAPPYENDING.md  # 원작 소설 (해피엔딩)
 │   └── USER_JOURNEY_KIM_SOLEUM.md      # 플레이어 유저 저니
 ├── GAME_DESIGN_SAEKWANG_HIGHSCHOOL.md  # 메인 게임 기획서
+├── CHARACTERS_AND_ITEMS.md             # 캐릭터 및 아이템 명세서
+├── SCENARIO_SAEKWANG_HIGHSCHOOL.md     # 상세 시나리오 및 대사
+├── HAPPY_ENDING_01_DESIGN.md           # 해피엔딩 01 상세 기획 (개발 후순위)
 ├── README.md
 └── .gitignore
 ```
@@ -46,10 +49,25 @@ in-the-dark/
 ### 게임 기획서
 - **[GAME_DESIGN_SAEKWANG_HIGHSCHOOL.md](./GAME_DESIGN_SAEKWANG_HIGHSCHOOL.md)**: 메인 게임 기획 문서
   - 게임 개요 및 시스템
-  - 캐릭터 및 아이템 상세
   - 맵 디자인 및 레벨 구조
   - 멀티 엔딩 시스템 (7가지 엔딩)
-  - 상세 게임 시나리오
+  - 핵심 게임플레이 메커니즘
+
+- **[CHARACTERS_AND_ITEMS.md](./CHARACTERS_AND_ITEMS.md)**: 캐릭터 및 아이템 명세서
+  - 플레이어 및 동료 NPC 정보
+  - 백일몽 주식회사 & 재난관리국 캐릭터
+  - 생존 도구, 소모품, 회복 아이템
+  - 전술 아이템 및 퀘스트 아이템
+
+- **[SCENARIO_SAEKWANG_HIGHSCHOOL.md](./SCENARIO_SAEKWANG_HIGHSCHOOL.md)**: 상세 시나리오 및 대사
+  - 주요 이벤트 상세 시나리오
+  - NPC 대화 및 선택지
+  - 퍼즐 및 이벤트 트리거
+
+- **[HAPPY_ENDING_01_DESIGN.md](./HAPPY_ENDING_01_DESIGN.md)**: 해피엔딩 01 상세 기획 (개발 후순위)
+  - 도서관에 잠든 학교 엔딩
+  - 7단계 상세 시퀀스
+  - 다중 NPC 협력 시스템
 
 ### 참고 자료
 - **[검은_그늘_속에서_나무위키.md](./references/검은_그늘_속에서_나무위키.md)**: 나무위키 원작 설정 리서치
