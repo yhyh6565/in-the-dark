@@ -36,8 +36,11 @@ in-the-dark/
 │   ├── NOVEL_TRANSCRIPT_SAEKWANG.md    # 원작 소설 (세광공고 에피소드)
 │   ├── NOVEL_TRANSCRIPT_SAEKWANG_HAPPYENDING.md  # 원작 소설 (해피엔딩)
 │   └── USER_JOURNEY_KIM_SOLEUM.md      # 플레이어 유저 저니
-├── GAME_DESIGN_SAEKWANG_HIGHSCHOOL.md  # 메인 게임 기획서
+├── DOCUMENT_STRUCTURE.md               # 📚 문서 구조 가이드 (필독!)
+├── SYSTEM_BALANCING.md                 # ⚖️ 모든 수치의 Source of Truth
+├── GAME_DESIGN_SAEKWANG_HIGHSCHOOL.md  # 메인 게임 기획서 (통합 문서)
 ├── CHARACTERS_AND_ITEMS.md             # 캐릭터 및 아이템 명세서
+├── LEVEL_DESIGN.md                     # 레벨 디자인 상세
 ├── SCENARIO_SAEKWANG_HIGHSCHOOL.md     # 상세 시나리오 및 대사
 ├── HAPPY_ENDING_01_DESIGN.md           # 해피엔딩 01 상세 기획 (개발 후순위)
 ├── README.md
@@ -46,30 +49,53 @@ in-the-dark/
 
 ## 📄 주요 문서
 
-### 게임 기획서
-- **[GAME_DESIGN_SAEKWANG_HIGHSCHOOL.md](./GAME_DESIGN_SAEKWANG_HIGHSCHOOL.md)**: 메인 게임 기획 문서
-  - 게임 개요 및 시스템
-  - 맵 디자인 및 레벨 구조
-  - 멀티 엔딩 시스템 (7가지 엔딩)
-  - 핵심 게임플레이 메커니즘
+### 🎯 필독 문서 (시작 전 필수!)
+- **[DOCUMENT_STRUCTURE.md](./DOCUMENT_STRUCTURE.md)** ⭐ **가장 먼저 읽으세요!**
+  - 프로젝트 문서 구조 및 의존성 가이드
+  - 문서 업데이트 체크리스트
+  - Cross-reference 작성법
+  - Source of Truth 정의
 
-- **[CHARACTERS_AND_ITEMS.md](./CHARACTERS_AND_ITEMS.md)**: 캐릭터 및 아이템 명세서
+### 🎮 게임 기획서
+
+#### Master Document (최고 권한)
+- **[SYSTEM_BALANCING.md](./SYSTEM_BALANCING.md)** ⚖️ **모든 수치의 Source of Truth**
+  - 플레이어/적 속도, HP, 데미지
+  - 손전등 수명, 배터리 개수
+  - 점멸 주기, UI 수치
+  - **수치 변경은 반드시 이 문서에서!**
+
+#### Integration Document (통합 문서)
+- **[GAME_DESIGN_SAEKWANG_HIGHSCHOOL.md](./GAME_DESIGN_SAEKWANG_HIGHSCHOOL.md)** 📖 **개발자가 가장 먼저 읽을 문서**
+  - 게임 개요 및 시스템
+  - 맵 디자인 및 레벨 구조 (요약)
+  - 멀티 엔딩 시스템 (개요)
+  - 각 전문 문서로의 링크
+
+#### Specialized Documents (전문 문서)
+- **[CHARACTERS_AND_ITEMS.md](./CHARACTERS_AND_ITEMS.md)** 👥 **캐릭터/아이템 설명 전문**
   - 플레이어 및 동료 NPC 정보
   - 백일몽 주식회사 & 재난관리국 캐릭터
-  - 생존 도구, 소모품, 회복 아이템
-  - 전술 아이템 및 퀘스트 아이템
+  - 아이템 설명 및 획득 방법
+  - ⚠️ 수치는 SYSTEM_BALANCING.md 참조
 
-- **[SCENARIO_SAEKWANG_HIGHSCHOOL.md](./SCENARIO_SAEKWANG_HIGHSCHOOL.md)**: 상세 시나리오 및 대사
+- **[LEVEL_DESIGN.md](./LEVEL_DESIGN.md)** 🗺️ **맵 레이아웃 전문**
+  - 층별 타일맵 구조
+  - 오브젝트 배치 좌표
+  - 아이템 배치 위치
+  - ⚠️ 배치 개수는 SYSTEM_BALANCING.md 참조
+
+- **[SCENARIO_SAEKWANG_HIGHSCHOOL.md](./SCENARIO_SAEKWANG_HIGHSCHOOL.md)** 🎭 **시나리오/대사 전문**
   - 주요 이벤트 상세 시나리오
   - NPC 대화 및 선택지
   - 퍼즐 및 이벤트 트리거
 
-- **[HAPPY_ENDING_01_DESIGN.md](./HAPPY_ENDING_01_DESIGN.md)**: 해피엔딩 01 상세 기획 (개발 후순위)
+- **[HAPPY_ENDING_01_DESIGN.md](./HAPPY_ENDING_01_DESIGN.md)** 🌙 **해피엔딩 01 (개발 후순위)**
   - 도서관에 잠든 학교 엔딩
   - 7단계 상세 시퀀스
   - 다중 NPC 협력 시스템
 
-### 참고 자료
+### 📚 참고 자료
 - **[검은_그늘_속에서_나무위키.md](./references/검은_그늘_속에서_나무위키.md)**: 나무위키 원작 설정 리서치
 - **[NOVEL_TRANSCRIPT_SAEKWANG.md](./references/NOVEL_TRANSCRIPT_SAEKWANG.md)**: 원작 소설 전문
 - **[NOVEL_TRANSCRIPT_SAEKWANG_HAPPYENDING.md](./references/NOVEL_TRANSCRIPT_SAEKWANG_HAPPYENDING.md)**: 원작 해피엔딩 버전
