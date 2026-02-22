@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://student_entity_001"]
+
+[ext_resource type="Script" path="res://scripts/ai/student_ai.gd" id="1_student_ai"]
+[ext_resource type="Texture2D" uid="uid://student_sprite" path="res://assets/sprites/entities/student_placeholder.png" id="2_sprite"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_student"]
+size = Vector2(14, 14)
+
+[node name="StudentEntity" type="CharacterBody2D" groups=["student_entity"]]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1_student_ai")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_sprite")
+texture_filter = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_student")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_desired_distance = 4.0
+target_desired_distance = 8.0
+path_max_distance = 16.0
+avoidance_enabled = true
+radius = 8.0
+max_speed = 32.0

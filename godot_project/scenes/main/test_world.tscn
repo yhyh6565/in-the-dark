@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=3 uid="uid://test_world_001"]
+
+[ext_resource type="PackedScene" uid="uid://bpxr8qn4j8ypc" path="res://scenes/player/player.tscn" id="1_player"]
+
+[node name="TestWorld" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_player")]
+position = Vector2(480, 272)
+
+[node name="Background" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.15, 0.15, 0.2, 1)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="DebugLabel" type="Label" parent="UI"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 400.0
+offset_bottom = 200.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 14
+text = "WASD: Move
+Shift: Run
+Ctrl: Crouch
+ESC: Debug Info
+
+Speed will display here..."

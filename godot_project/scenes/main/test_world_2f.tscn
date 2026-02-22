@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://test_world_2f"]
+
+[ext_resource type="PackedScene" uid="uid://floor_2_map" path="res://scenes/maps/floor_2.tscn" id="1_floor"]
+[ext_resource type="PackedScene" uid="uid://bpxr8qn4j8ypc" path="res://scenes/player/player.tscn" id="2_player"]
+
+[node name="TestWorld2F" type="Node2D"]
+
+[node name="Floor2" parent="." instance=ExtResource("1_floor")]
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
+position = Vector2(720, 432)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="DebugLabel" type="Label" parent="UI"]
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 500.0
+offset_bottom = 250.0
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "=== 2F MAP TEST ===
+WASD: Move
+Shift: Run (9.0 tiles/s)
+Ctrl: Crouch (3.0 tiles/s)
+ESC: Debug Info
+
+Current Floor: 2F
+Spawn: Class 1-5 (교실)
+
+Map Size: 60x50 tiles
+Layout: ㅁ-shaped corridors
+Classrooms: 1-1 through 1-8
+"
+
+[node name="FloorLabel" type="Label" parent="UI"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -150.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = 50.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_font_sizes/font_size = 24
+text = "2F"
+horizontal_alignment = 2
